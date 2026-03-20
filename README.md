@@ -8,11 +8,12 @@ I have provided an example script in statfishpy/utils called demo_moran_i, which
 
 From this demo program you can infer usage of other tools in the library. Most process calls follow the same format:
 
+```python
 sf.spatial.build_spatial_graph(     #choose the process
     adata,                          #direct the function to your AnnData object
     x_key="center_x",               #provide variable keys as necessary
     y_key="center_y",
-    k=30                            #adjust any other process parameters 
+    k=30                            #adjust any other process parameters
 )
 
 
